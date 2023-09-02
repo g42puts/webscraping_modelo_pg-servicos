@@ -1,0 +1,25 @@
+# arquivo .env
+.env
+
+# arquivos do python
+user_variables.py
+teste_pegar_mes_do_ano.py
+salvar_dados.py
+
+# pasta pycache
+__pycache__/
+
+# pastas da env
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
+
+# todos arquivos .csv
+*.csv
+
+# todo arquivos .txt
+*.txt
+
+# todos arquivos .log
+*.log
