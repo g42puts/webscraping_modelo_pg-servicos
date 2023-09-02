@@ -58,21 +58,21 @@ pip install -r requiriments.txt
 <div style="display: flex; justify-content: space-between;">
     <p>
       <img src="https://skillicons.dev/icons?i=python&theme=dark" alt="Python" width="24">
-      <a href="https://www.python.org/">Python</a>
+      <a href="https://www.python.org/" target="_blank">Python</a>
     </p>
 </div>
 
 <div style="display: flex; justify-content: space-between;">
     <p>
       <img src="https://skillicons.dev/icons?i=selenium&theme=dark" alt="Selenium" width="24">
-      <a href="https://www.selenium.dev/">Selenium</a>
+      <a href="https://www.selenium.dev/" target="_blank">Selenium</a>
     </p>
 </div>
 
 <div style="display: flex; justify-content: space-between;">
     <p>
       <img src="https://pandas.pydata.org//static/img/favicon_white.ico" alt="Pandas" width="24">
-      <a href="https://pandas.pydata.org/docs/">Pandas</a>
+      <a href="https://pandas.pydata.org/docs/" target="_blank">Pandas</a>
     </p>
 </div>
 
