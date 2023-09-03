@@ -33,8 +33,8 @@ def service_webscrap():
     data_mes_atual = dt_datetime.now().month
     data_mes_seguinte = data_mes_atual + 1
 
+    # configurações do Firefox
     options = Options()
-    
     options.add_argument('--headless'), # interface gráfica, exibição do navegador
     options.add_argument('--no-sandbox'), # reduz consumo de recursos
     options.add_argument('--disable-geolocation'), # geolocalização
@@ -42,14 +42,6 @@ def service_webscrap():
     options.add_argument('--disable-notifications'), # notificações 
     options.add_argument('--disable-popup-blocking'), # pop-ups
     options.add_argument('--disable-gpu') # aceleração de hardware
-
-
-
-    # # configurações do Firefox
-    
-
-    # # execução sem interface gráfica
-    # options.add_argument('--headless')
 
     # Inicializar o driver do Firefox
     driver = webdriver.Firefox(options=options)
