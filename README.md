@@ -60,7 +60,7 @@ pip install -r requiriments.txt
 
 ### *XPATH*, O que é?
 
-Segundo está [artigo](https://escoladedados.org/tutoriais/xpath-para-raspagem-de-dados-em-html/) da [Escola de Dados](https://escoladedados.org): 
+Segundo este [artigo](https://escoladedados.org/tutoriais/xpath-para-raspagem-de-dados-em-html/) da [Escola de Dados](https://escoladedados.org): 
 
 `O XPath é uma linguagem de consulta que nos ajuda a navegar por documentos que usam marcadores, como os arquivos XML (Extensible Markup Language) e HTML (HyperText Markup Language). Para você que já entende o básico de HTML, aqui será possível ter uma introdução sobre como usar XPath para extrair informações deste tipo de documento.`
 
