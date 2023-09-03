@@ -16,6 +16,13 @@ default_time_sleep = 2
 # define variavel meses do ano
 meses_do_ano = ['','janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro']
 
+class FirefoxNevagator(Options):
+    def __init__(self):
+        options = self
+
+        super().__init__(options)
+
+
 def service_webscrap():
 
     # configs do user
@@ -26,11 +33,23 @@ def service_webscrap():
     data_mes_atual = dt_datetime.now().month
     data_mes_seguinte = data_mes_atual + 1
 
-    # configurações do Firefox
     options = Options()
+    
+    options.add_argument('--headless'), # interface gráfica, exibição do navegador
+    options.add_argument('--no-sandbox'), # reduz consumo de recursos
+    options.add_argument('--disable-geolocation'), # geolocalização
+    options.add_argument('--disable-dev-shm-usage'), # compartilhamento de memoria temporaria
+    options.add_argument('--disable-notifications'), # notificações 
+    options.add_argument('--disable-popup-blocking'), # pop-ups
+    options.add_argument('--disable-gpu') # aceleração de hardware
 
-    # execução sem interface gráfica
-    options.add_argument('--headless')
+
+
+    # # configurações do Firefox
+    
+
+    # # execução sem interface gráfica
+    # options.add_argument('--headless')
 
     # Inicializar o driver do Firefox
     driver = webdriver.Firefox(options=options)
@@ -131,7 +150,10 @@ def get_div_values(driver:webdriver.Firefox, mes):
 
 # passa os dados para formato DataFrame (pandas.DataFrame) e salva em formato csv
 def salvar_em_csv(dados):
-    pd.DataFrame(dados).to_csv(dados['mes'], index=False)
+    print(dados)
+    if dados == []:
+        return
+    pd.DataFrame(dados).to_csv(f"{dados[0]['mes']}.csv", index=False)
     
 if __name__ == '__main__':
     service_webscrap()

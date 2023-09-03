@@ -18,8 +18,5 @@ pyvenv.cfg
 # todos arquivos .csv
 *.csv
 
-# todo arquivos .txt
-*.txt
-
 # todos arquivos .log
 *.log
