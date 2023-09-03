@@ -4,18 +4,18 @@
 
 # Conteúdos
   * [O que é isso?](#o-que-e-isso)
-    * [A ideia do projeto](##a-ideia-do-projeto)
+    * [A ideia do projeto](#a-ideia-do-projeto)
   * [Requisitos](#requisitos)
   * [Como usar](#como-usar)
-  * [O desenvolvimento e dificuldades na criação](#)
-    * [Importações](#importações)
-    * [Arquivos pessoais](#arquivos-pessoais)
-    * 
   * [A estrutura](#a-estrutura)
-
+    * [Extração dos dados](#extração-dos-dados)
+    * [Navegação na página](#navegação-na-pagina)
 
 
 # O que é isso?
+
+Trata-se de um simples projeto de **ETL (Extract Transform Load)** de um site que exibe escalas de serviços usando [Selenium](https://www.selenium.dev/) e [Pandas](https://www.python.org/).
+
   ## A ideia do projeto
 Um amigo veio até mim me perguntar como poderia fazer um simples programa para atender a necessidade dele, que era de obter alguns dados em um site dinâmico, e nesse processo a primeira etapa seria realizar o login para poder entrar no sistema e em seguida dar prosseguimento a navageção e extração de dados, então tive a ideia de usar o Selenium já que ele conta uma biblioteca muito boa para fazer WebScraping e em seu kit, há ferramentas prontas para leitura de HTML, interação com páginas (autenticação) e etc.
 
@@ -53,39 +53,16 @@ pip install -r requiriments.txt
 
 3. Faça as alterações no código da forma que quiser, não se preocupe com direitos autorais ou qualquer outra coisa, este repositório é apenas para fins de estudo.
 
-# O desenvolvimento e dificulades na criação
+# A estrutura
 
-### Bibliotecas usadas:
-
-<div style="display: flex; justify-content: space-between;">
-    <p>
-      <img src="https://skillicons.dev/icons?i=python&theme=dark" alt="Python" width="24">
-      <a href="https://www.python.org/" target="_blank">Python</a>
-    </p>
-</div>
-
-<div style="display: flex; justify-content: space-between;">
-    <p>
-      <img src="https://skillicons.dev/icons?i=selenium&theme=dark" alt="Selenium" width="24">
-      <a href="https://www.selenium.dev/" target="_blank">Selenium</a>
-    </p>
-</div>
-
-<div style="display: flex; justify-content: space-between;">
-    <p>
-      <img src="https://pandas.pydata.org//static/img/favicon_white.ico" alt="Pandas" width="24">
-      <a href="https://pandas.pydata.org/docs/" target="_blank">Pandas</a>
-    </p>
-</div>
+## Extração dos dados
 
 
 
-# 3. A estrutura
+## Navegação na página
 
 A forma como os dados será salva na tabela:
 
 | dia | mes | ano | dia_do_mes | servico |
 |-----|-----|-----|------------|---------|
 |30|março|2023|Quinta-Feira|M|
-
-
