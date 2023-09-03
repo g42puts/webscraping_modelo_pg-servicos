@@ -71,7 +71,7 @@ Como deu para entender, o **XPATH** é uma poderosa ferramenta de consulta, para
 ```html
 <h2 class="titulo-com-grafismo" style="margin-bottom:14px">Exemplo</h2>
 ```
-Através da busca pelo XPATH, eu irei procurar na página que me encontro, todos os **<h2>** que a classe seja igual a **titulo-com-grafismo**, e é este formato que o meu **XPATH** terá:
+Através da busca pelo XPATH, eu irei procurar na página que me encontro, todos os **`<h2>`** que a classe seja igual a **titulo-com-grafismo**, e é este formato que o meu **XPATH** terá:
 
 ```python
 //h2[@class="titulo-com-grafismo"]
