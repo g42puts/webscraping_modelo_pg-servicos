@@ -11,6 +11,7 @@
     * [Extração dos dados](#extração-dos-dados)
     * [Navegação na página](#navegação-na-pagina)
     * [Resultado final](#resultado-final)
+  * [Exemplo de código](#exemplo-de-codigo)
 
 
 # O que é isso?
@@ -128,3 +129,7 @@ A forma como os dados será salva na tabela:
 | dia | mes | ano | dia_do_mes | servico |
 |-----|-----|-----|------------|---------|
 |30|março|2023|Quinta-Feira|[M]|
+
+# Exemplo de código
+
+Deixei como exemplo no repositório, o arquivo `teste_google.py` que faz a extração do link da logo da página inicial do **Google**.
