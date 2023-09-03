@@ -16,13 +16,6 @@ default_time_sleep = 2
 # define variavel meses do ano
 meses_do_ano = ['','janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro']
 
-class FirefoxNevagator(Options):
-    def __init__(self):
-        options = self
-
-        super().__init__(options)
-
-
 def service_webscrap():
 
     # configs do user
